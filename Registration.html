@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KK Computers - Registration</title>
+  <link rel="stylesheet" href="registration1.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>KK Computers - Registration Form</h2>
+    <form id="registrationForm" onsubmit="handleRegistration(event)">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+      </div>
+
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp Number</label>
+        <input type="tel" id="whatsapp" placeholder="Enter WhatsApp number" required />
+      </div>
+
+      <div class="form-group">
+        <label for="program">Select Program</label>
+        <select id="program" required>
+          <option value="">--Select--</option>
+          <option value="it-training">IT Training</option>
+          <option value="certifications">Certifications</option>
+          <option value="final-projects">Final Year Projects</option>
+          <option value="bootcamp">Tech Bootcamp</option>
+          <option value="hack-the-web">Hack The Web</option>
+        </select>
+      </div>
+
+      <button type="submit">Register</button>
+      <p id="responseMsg"></p>
+    </form>
+  </div>
+
+  <script src="registration2.js"></script>
+</body>
+</html>
